@@ -1,8 +1,10 @@
 FROM eclipse-temurin:17-jdk
 
+WORKDIR /usr/app/
+
 COPY target/Docker_Example.jar /usr/app
 
-WORKDIR /usr/app/
+
 
 EXPOSE 8080
 
